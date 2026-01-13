@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE PRIME - Circle Free Fire</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000000);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 30px 15px;
+      text-align: center;
+      background: linear-gradient(135deg, #000000, #1f1f1f);
+      border-bottom: 2px solid #ffcc00;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: #ffcc00;
+      letter-spacing: 2px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #ffcc00;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #ffcc00, #ff9900);
+      color: #000;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255,204,0,0.6);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,204,0,0.9);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000000;
+      font-size: 0.85rem;
+      color: #aaaaaa;
+    }
+    @keyframes pulseGlow {
+      0% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255,0,0,0.5)); }
+      50% { transform: scale(1.08); filter: drop-shadow(0 0 25px rgba(255,0,0,0.9)); }
+      100% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255,0,0,0.5)); }
+    }
+    #splash {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle, #000000, #0b0b0b);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      animation: fadeOut 1s ease forwards;
+      animation-delay: 2.5s;
+    }
+    #splash h2 {
+      margin: 15px 0 5px;
+      color: #ffcc00;
+      letter-spacing: 3px;
+    }
+    #splash p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .splash-logo {
+      width: 150px;
+      animation: pulseGlow 1.5s infinite;
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    .loading-bar {
+      width: 180px;
+      height: 8px;
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 18px;
+      box-shadow: 0 0 10px rgba(255,0,0,0.4);
+    }
+    .loading-bar span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #ff0000, #ffcc00);
+      animation: loadingMove 3s linear forwards;
+    }
+    @keyframes loadingMove {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
+    }
+</style>
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <img src="prime.png" alt="THE PRIME Logo" class="splash-logo" />
+    <h2>THE PRIME</h2>
+    <p>Elite Circle</p>
+    <div class="loading-bar">
+      <span></span>
+    </div>
+  </div>  <header>
+    <img src="prime.png" alt="THE PRIME Logo" style="width:120px;max-width:40vw;animation:pulseGlow 2s infinite;" />
+    <h1>🔥 THE PRIME 🔥</h1>
+    <p>Elite Squad • Mabar • laga • Turnamen</p>
+  </header>  <section>
+    <h2 style="text-align:center;">Tentang Circle</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      THE PRIME adalah circle elite pemain Free Fire Yang isinya para Elite cs,di rancang tidak pernah kalah
+    </p>
+  </section>  <section>
+    <h2 style="text-align:center;">Fitur Circle</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>🎮 war Harian</h3>
+        <p>war bareng setiap hari dengan member circle.</p>
+      </div>
+      <div class="card">
+        <h3>🏆 Push Rank</h3>
+        <p>Naik rank bareng dari Gold sampai Heroic.</p>
+      </div>
+      <div class="card">
+        <h3>🔥 Event & Turnamen</h3>
+        <p>Ikut event internal dan turnamen komunitas.</p>
+      </div>
+    </div>
+  </section>  <section style="text-align:center;">
+    <h2>Gabung Sekarang</h2>
+    <p>Masuk circle dan jadi bagian dari squad terbaik!</p>
+    <a href="https://chat.whatsapp.com/IUlRNEi7PT7IhEGKr9VXto" class="btn" target="_blank">Join Group WhatsApp</a>
+  </section>  <footer>
+    <p>© 2026 THE PRIME | Elite Free Fire Circle</p>
+  </footer>  <script>
+    setTimeout(() => {
+      const splash = document.getElementById('splash');
+      if (splash) splash.remove();
+    }, 3500);
+  </script></body>
+</html>
